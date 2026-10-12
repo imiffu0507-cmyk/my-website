@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import Chat from "./Chat.jsx";
 
 const features = [
   ["💡", "Ideas", "Share an idea and turn it into a clearer, stronger concept."],
@@ -116,6 +117,13 @@ function App() {
             ))}
           </div>
         </section>
+       
+       <section id="chat" className="section">
+          <span className="eyebrow">NEXORA AI CHAT</span>
+          <h2>Ask NEXORA</h2>
+          <p>Ask questions, explore ideas and learn something new.</p>
+          <Chat />
+          </section>
 
         <section id="about" className="vision">
           <span className="eyebrow">OUR VISION</span>
